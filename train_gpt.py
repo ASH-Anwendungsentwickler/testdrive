@@ -26,8 +26,8 @@ CUDA   = torch.cuda.is_available()
 DEVICE = "cuda" if CUDA else "cpu"
 
 if CUDA:
-    BATCH_SIZE   = 16
-    GRAD_ACCUM   = 8
+    BATCH_SIZE   = 8
+    GRAD_ACCUM   = 16
     EVAL_EVERY   = 200
     WARMUP_STEPS = 300
     STABLE_FRAC  = 0.75
